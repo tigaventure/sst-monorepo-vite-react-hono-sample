@@ -9,6 +9,7 @@
     "./button": "./src/components/button.tsx"
   },
   "dependencies": {
+    "@repo/tsconfig": "*",
     "@radix-ui/react-slot": "^1.2.0",
     "@tailwindcss/vite": "^4.1.5",
     "class-variance-authority": "^0.7.1",
