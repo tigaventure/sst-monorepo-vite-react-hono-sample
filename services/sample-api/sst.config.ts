@@ -1,5 +1,4 @@
 /// <reference path="./.sst/platform/config.d.ts" />
-import packageJson from "./package.json";
 
 const STAGE_DOMAIN = {
   production: "api.sample.3ga.fun",
@@ -7,9 +6,10 @@ const STAGE_DOMAIN = {
 };
 
 export default $config({
-  app(input) {
+  async app(input) {
+    const packageJson = await import("./package.json");
     return {
-      name: packageJson.name,
+      name: packageJson.default.name,
       removal: input?.stage === "production" ? "retain" : "remove",
       protect: ["production"].includes(input?.stage),
       home: "cloudflare",

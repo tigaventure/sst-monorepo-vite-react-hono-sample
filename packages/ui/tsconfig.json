@@ -1,9 +1,9 @@
 {
+  "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
     "jsx": "react",
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["./*"]
-    }
-  }
+    "outDir": "./dist",
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
 }

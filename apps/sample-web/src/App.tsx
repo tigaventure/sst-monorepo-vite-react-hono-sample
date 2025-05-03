@@ -1,5 +1,5 @@
+import { Button } from '@repo/ui/button'
 import './App.css'
-import { Button } from 'ui/components/button'
 
 function App() {
 

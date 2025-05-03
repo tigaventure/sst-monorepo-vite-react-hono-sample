@@ -12,6 +12,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@repo/ui": "*",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "sst": "3.14.11"
