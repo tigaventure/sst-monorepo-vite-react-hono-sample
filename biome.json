@@ -7,8 +7,8 @@
     "enabled": true,
     "rules": {
       "recommended": true,
-      "correctness": {
-        "noUnusedLocals": "off"
+      "style": {
+        "noNonNullAssertion": "off"
       }
     }
   },
@@ -25,6 +25,9 @@
     }
   },
   "files": {
-    "ignore": ["**/sst-env.d.ts"]
+    "ignore": [
+      "**/sst-env.d.ts",
+      "**/.sst/**"
+    ]
   }
 }
